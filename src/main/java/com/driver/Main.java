@@ -6,11 +6,18 @@ class A {
     }
 }
 class B extends A{
+
+//    B b = new B();
+//    b.meth();
     public String meth(){
         return "Method is overridden in Extendend class B";
     }
 }
 public class Main {
-  B b = new B();
-  b.meth();
+    public static void main(String args[]){
+
+        B obj = new B();
+        obj.meth();
+    }
+
 }
